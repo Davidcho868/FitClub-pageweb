@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,900&display=swap');
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 65px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 0;
+
+}
+
+h2 {
+    font-size: 20px;
+    padding: 0 50px 20px 50px;
+}
+
+/* *****header****** */
+
+header {
+    background-image: linear-gradient(to top right, rgba(124, 40, 99, 0.317), rgba(0, 0, 0, 0.311)), url(../img/fitness.jpg);
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    color: white;
+    padding-bottom: 150px;
+
+}
+
+header img {
+    height: 40px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 20px;
+    margin-top: 0;
+}
+
+header ul {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+header p {
+    text-align: center;
+
+}
+
+/* classe general */
+
+.btn {
+    border: 1px solid black;
+    background-color: rgb(124, 40, 99);
+    padding: 10px;
+    color: white;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.container {
+    width: 1060px;
+    margin: auto;
+    padding: auto;
+}
+
+/* section1 */
+
+#doubleimage {
+    display: flex;
+    justify-content: center;
+    margin-top: -50px;
+    align-items: center;
+}
+
+#doubleimage h2 {
+    padding-bottom: 50px;
+}
+
+#doubleimage a {
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.253);
+}
+
+#doubleimage a:first-of-type {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.384), rgba(0, 0, 0, 0.436)), url(../img/fitnessman.jpg);
+    background-position: top;
+    background-size: cover;
+    color: white;
+    text-align: center;
+
+}
+
+#doubleimage a:last-child {
+    background-image: linear-gradient(rgba(124, 40, 99, 0.422), rgba(124, 40, 99, 0.451)), url(../img/fitnesswoman.jpg);
+    background-position: top;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+#doubleimage p {
+    padding-top: 50px;
+}
+
+/* section objectif */
+
+#objectif {
+    text-align: center;
+    line-height: 10px;
+    padding-top: 50px;
+}
+
+/* section autrement */
+
+#autrement ul {
+    display: flex;
+    align-items: stretch;
+    text-align: center;
+    margin: 0px;
+}
+
+#autrement img {
+    height: 48px;
+}
+
+#autrement ul li {
+    padding: 30px;
+    width: 25%;
+    height: 160px;
+    border-top: 2px solid rgba(0, 0, 0, 0.347);
+    border-left: 2px solid rgba(0, 0, 0, 0.347);
+}
+
+#autrement ul li:first-child {
+    border-left: 0px solid rgba(0, 0, 0, 0.347);
+}
+
+.pneu {
+    background-image: linear-gradient(to right, rgb(124, 40, 99, 0.4) 25%, rgba(0, 0, 0, 0.2) 45%, rgba(0, 0, 0, 1) 50%), url(/img/crossfit.jpg);
+    background-position: top;
+    background-size: cover;
+    color: white;
+}
+
+.paragraphe {
+    margin: 0 10% 0 50%;
+    padding: 30px;
+}
+
+article h3 {
+    margin: 0 auto 0 45%;
+    padding-top: 40px;
+}
+
+/* section info */
+
+#info ul {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    text-align: center;
+}
+
+#info ul li {
+    width: calc(100% / 3);
+    padding: 40px;
+}
+
+#info img {
+    height: 48px;
+}
+
+#info ul li:nth-of-type(odd) {
+    background-color: whitesmoke;
+}
+
+/* section map */
+
+section iframe {
+    width: 100%;
+}
+
+/* footer */
+
+footer ul {
+    display: flex;
+    background-color: black;
+    color: white;
+    margin-top: -10px;
+    border-top: 10px solid rgb(124, 40, 99);
+    margin-bottom: 0;
+}
+
+footer img {
+    height: 40px;
+}
+
+footer ul li {
+    width: calc(100% / 3);
+    padding: 20px;
+}
+
+footer ul li:nth-of-type(1) {
+    text-align: end;
+
+}
+
+footer ul li:nth-of-type(2) {
+    background-color: white;
+    color: black;
+    text-align: center;
+    margin-top: -100px;
+    border-bottom: 30px solid black;
+}
+
+footer ul li form input {
+    margin: 10px;
+}
+
+footer .infoperso {
+    width: 80%;
+    border: none;
+    border-bottom: 2px solid black
+}
+
+footer ul li:last-child i {
+    color: rgb(124, 40, 99);
+}
+
+footer small {
+    padding-left: 20px;
+    display: inline-block;
+}
+
+footer i strong {
+    color: white;
+    font-size: 10px;
+    padding: 10px;
+}
+
+footer ul:first-child i {
+    color: white;
+}
+
+/***************Responsive****************/
+
+/* Responsive tablette */
+@media (min-width: 768px) and (max-width: 990px) {
+    #doubleimage {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #info ul li {
+        width: 50%;
+    }
+
+    #info ul li:nth-of-type(odd) {
+        background-color: white;
+    }
+
+    #info ul li:nth-of-type(2),
+    #info ul li:nth-of-type(3),
+    #info ul li:nth-of-type(6) {
+        background-color: whitesmoke;
+    }
+
+
+}
+
+
+
+/* Responsive mobile */
+
+@media (max-width: 768px) {
+
+    #doubleimage {
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #info ul li {
+        width: 100%;
+    }
+
+    .container {
+        width: auto;
+        text-align: center;
+    }
+
+    #objectif {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        width: auto;
+
+    }
+
+    #objectif p {
+        line-height: 25px;
+    }
+
+    .pneu {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)), url(/img/crossfit.jpg);
+    }
+
+
+    article h3,
+    .paragraphe {
+        text-align: center;
+        margin: auto;
+        padding: auto;
+    }
+
+    #autrement ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #autrement ul li {
+        width: 50%;
+    }
+
+    footer ul li{
+        width: auto;
+    }
+
+    footer ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        padding: auto;
+        
+    }
+
+    #formulaire {
+        order: -1;
+        width: auto;
+    }
+
+    footer ul li:nth-of-type(1){
+        text-align: center;
+    }
+
+    footer ul li:nth-of-type(3){
+        text-align: left;
+        margin-left: 0;
+    }
+
+}
